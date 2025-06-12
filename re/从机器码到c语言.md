@@ -7,6 +7,7 @@
 
 一个例子：
 ![alt text](img/image.png)
+
 跟进judge发现是这些
 但是main函数里面有`(*(unsigned int (__fastcall **)(char *))judge)(s)`
 说明judge是藏在数据段里面的代码
@@ -29,4 +30,5 @@ x/182xb 0x600B00 ; 这里我的汇编代码长度182个字节，起始地址为0
 ```
 
 ![alt text](img/image-1.png)
+
 结果就是这样，如果想锻炼读汇编的能力，可以试试这种方式
